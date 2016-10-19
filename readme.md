@@ -9,7 +9,7 @@ ssh-keygen  -C  "username@email.com"  -t  rsa
 程序将提出一些问题，接受文件默认存放位置，当要求输入pass phrase时，如果本机安全没有问题，也可以不输入。找到当时制定的文件存储位置中id_rsa.pub文件，这就是在GitHub上申请帐户时需要使用的SSH公钥文件。
 在github.com的register中选择Free account，在后续的界面中按照要求填入相应的内容即可完成注册，很简单的。
 
-#2.一、 Git 命令初识
+#2.Git 命令初识
 
 在正式介绍Git命令之前，先介绍一下Git 的基本命令和操作，对Git命令有一个总体的认识
 
@@ -23,7 +23,7 @@ ssh-keygen  -C  "username@email.com"  -t  rsa
 
 git clone git@github.com:antknox/Project-hosts-download-share.git /d/git
 
-#3.2）git init 和 git remote：这种方式稍微复杂一些，当你本地创建了一个工作目录，你可以进入这个目录，使用'git init'命令进行初始化；Git以后就会对该目录下的文件进行版本控制，这时候如果你需要将它放到远程服务器上，可以在远程服务器上创建一个目录，并把可访问的URL记录下来，此时你就可以利用'git remote add'命令来增加一个远程服务器端，
+2）git init 和 git remote：这种方式稍微复杂一些，当你本地创建了一个工作目录，你可以进入这个目录，使用'git init'命令进行初始化；Git以后就会对该目录下的文件进行版本控制，这时候如果你需要将它放到远程服务器上，可以在远程服务器上创建一个目录，并把可访问的URL记录下来，此时你就可以利用'git remote add'命令来增加一个远程服务器端，
 例如：git  remote  add  origin  git://github.com/someone/another_project.git
 上面的命令就会增加URL地址为'git: //github.com/someone/another_project.git'，名称为origin的远程服务器，以后提交代码的时候只需要使用 origin别名即可
 
@@ -31,7 +31,7 @@ cd Project-hosts-download-share
 git init
 git remote add origin git@github.com:antknox/Project-hosts-download-share.git
 
-#4.二、 Git 常用命令
+#3.Git 常用命令
 
 1) 远程仓库相关命令
 检出仓库：        $ git clone git://github.com/jQuery/jquery.git
@@ -53,7 +53,7 @@ git push origin
 
 
 
-大致流程是：
+#4.大致流程是：
 
 1、在github上创建项目
 
@@ -86,7 +86,7 @@ git push origin master
 
 
 
-PS
+#5.PS
 
  git archive master > /d/git/tmp/1.zip
 打包
