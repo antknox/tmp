@@ -78,10 +78,15 @@ git push origin master
 Project-hosts-download-share
 
 cd /d/git
-git clone git@github.com:antknox/Project-hosts-download-share.git
+
+git clone git@github.com:antknox/Project-hosts-download-share.git.
+
 cd project-hosts-download-share
+
 git add .
+
 git commit -m "2016-10-19"
+
 git push origin master
 
 
