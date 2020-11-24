@@ -51,7 +51,12 @@ git remote add
 
 git push origin
 
-
+git命令－切换分支
+1. 查看远程分支 $ git branch -a 
+2. 查看本地分支 $ git branch
+3. 切换分支 $ git checkout -b v0.9rc1 origin/v0.9rc1  $ git branch
+＃切换回master分支
+$ git checkout master
 
 #4.大致流程是：
 
